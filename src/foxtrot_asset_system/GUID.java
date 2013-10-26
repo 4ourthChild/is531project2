@@ -8,7 +8,7 @@
 ///   the code to a web site, share it with others, or pass
 ///   it on in any way.
 
-package edu.byu.isys413.fbrooke;
+package foxtrot_asset_system;
 
 /**
  * Version 2.7

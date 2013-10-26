@@ -9,7 +9,7 @@
 ///   it on in any way.
 
 
-package edu.byu.isys413.fbrooke;
+package foxtrot_asset_system;
 
 import java.util.*;
 

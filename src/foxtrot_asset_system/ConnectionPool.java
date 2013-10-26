@@ -1,4 +1,4 @@
-package edu.byu.isys413.fbrooke;
+package foxtrot_asset_system;
 
 /////////////////////////////////////////////////////////////////
 ///   This file is an example of an Object Relational Mapping in
@@ -32,12 +32,12 @@ import java.util.logging.Logger;
  */
 public class ConnectionPool {
 
-  private static String DATABASE_URL = "jdbc:mysql://intexmystuff.com:3307/mynewdatabase";
+  private static String DATABASE_URL = "assetinstance.chalfgwm3omg.us-west-2.rds.amazonaws.com:3306/foxtrot_asset";
   private static String DRIVER_NAME = "com.mysql.jdbc.Driver";
   private static final int MAX_CONNECTIONS = 10;
-  private static String DATABASE_USERNAME = "BrookieCookie";
+  private static String DATABASE_USERNAME = "admin";
   //private static String DATABASE_PASSWORD = "";
-  private static String DATABASE_PASSWORD = "FalconFirec@c@22";
+  private static String DATABASE_PASSWORD = "0rangePass1on";
 
   
   //////////////////////////////////////////////
