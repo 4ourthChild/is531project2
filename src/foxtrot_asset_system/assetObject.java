@@ -9,7 +9,7 @@ public class assetObject {
 	private String installDate;
 	private String date_depreciated_by;
 	private String tag;
-	private String notes;
+	private String note;
 	private String location_id;
 	
 	public assetObject(){
@@ -72,8 +72,8 @@ public class assetObject {
 		this.tag = tag;
 	}
 
-	public String getNotes() {
-		return notes;
+	public String getNote() {
+		return note;
 	}
 
 	public void setNotes(String notes) {

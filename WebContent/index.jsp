@@ -48,14 +48,12 @@
 </head>
 <body>
 			<form action="confirmation.jsp" method="GET">
-			First Name: <input type="text" name="first_name"><br />
-			Last Name: <input type="text" name="last_name" /><br />
-			email address: <input type="text" name="email_address" /><br />
 			Manufacturer: <input type="text" name="manufacturer_name" /><br />
 			Part Name: <input type="text" name="manufacturer_part_name" /><br />
-			tag #: <input type="text" name="tag#" /><br />
+			tag #: <input type="text" name="tag" /><br />
 			Location Group: <input type="text" name="location_group_name" /><br />
 			Location Name: <input type="text" name="location_name" /><br />
+			Note: <input type="text" name="note" /><br />
 			<input type="submit" value="Submit" />
 		</form>
 

@@ -1,6 +1,6 @@
 package foxtrot_asset_system;
 
-public class maintenance_notes {
+public class maintenanceNotes {
 
 	private String id;
 	private String asset_id;
@@ -9,7 +9,7 @@ public class maintenance_notes {
 	private String serviceDate;
 	private String serviceEmployeeId;
 	
-	public maintenance_notes(){
+	public maintenanceNotes(){
 		
 	}
 

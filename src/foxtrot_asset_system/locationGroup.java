@@ -1,13 +1,13 @@
 package foxtrot_asset_system;
 
-public class location_group {
+public class locationGroup {
 
 	private String id;
 	private String name;
 	private String address;
 	private String location_id;
 	
-	public location_group()
+	public locationGroup()
 	{
 		
 	}
@@ -42,7 +42,6 @@ public class location_group {
 
 	public void setLocation_id(String location_id) {
 		this.location_id = location_id;
-	}
-	
+	}	
 	
 }
