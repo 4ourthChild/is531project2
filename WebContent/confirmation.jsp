@@ -10,11 +10,21 @@
 		<h1>Using GET Method to Read Form Data</h1>
 		<ul>
 		<li><p><b>First Name:</b>
-		   <%= request.getParameter("first_name")%>
+		   <%= request.getParameter("name")%>
 		</p></li>
 		<li><p><b>Last  Name:</b>
-		   <%= request.getParameter("last_name")%>
+		   <%= request.getParameter("manufacturer_name")%>
 		</p></li>
+		<li><p><b>Last  Name:</b>
+		   <%= request.getParameter("manufacturer_part_id")%>
+		</p></li>
+		<li><p><b>Last  Name:</b>
+		   <%= request.getParameter("tag")%>
+		</p></li>
+		<li><p><b>Last  Name:</b>
+		   <%= request.getParameter("location_name")%>
+		</p></li>
+		
 		</ul>
 
 
