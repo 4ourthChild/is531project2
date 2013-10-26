@@ -18,6 +18,7 @@ public class locationGroup extends BusinessObject{
 
 	public void setId(String id) {
 		this.id = id;
+		setDirty();
 	}
 
 	public String getName() {
@@ -26,6 +27,7 @@ public class locationGroup extends BusinessObject{
 
 	public void setName(String name) {
 		this.name = name;
+		setDirty();
 	}
 
 	public String getAddress() {
@@ -34,6 +36,7 @@ public class locationGroup extends BusinessObject{
 
 	public void setAddress(String address) {
 		this.address = address;
+		setDirty();
 	}
 
 	public String getLocation_id() {
@@ -42,6 +45,7 @@ public class locationGroup extends BusinessObject{
 
 	public void setLocation_id(String location_id) {
 		this.location_id = location_id;
+		setDirty();
 	}	
 	
 }

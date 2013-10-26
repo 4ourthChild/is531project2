@@ -1,6 +1,6 @@
 package foxtrot_asset_system;
 
-public class employee{
+public class employee extends BusinessObject{
 	
 	private String first;
 	private String last;
@@ -9,8 +9,8 @@ public class employee{
 	private String id;
 	private String department;
 	
-	public employee() {
-		
+	public employee(String id) {
+		super(id);
 	}
 
 	public String getFirst() {
@@ -19,6 +19,7 @@ public class employee{
 
 	public void setFirst(String first) {
 		this.first = first;
+		setDirty();
 	}
 
 	public String getLast() {
@@ -27,6 +28,7 @@ public class employee{
 
 	public void setLast(String last) {
 		this.last = last;
+		setDirty();
 	}
 
 	public String getSsn() {
@@ -35,6 +37,7 @@ public class employee{
 
 	public void setSsn(String ssn) {
 		this.ssn = ssn;
+		setDirty();
 	}
 
 	public String getBuildingId() {
@@ -43,6 +46,7 @@ public class employee{
 
 	public void setBuildingId(String buildingId) {
 		this.buildingId = buildingId;
+		setDirty();
 	}
 
 	public String getId() {
@@ -51,6 +55,7 @@ public class employee{
 
 	public void setId(String id) {
 		this.id = id;
+		setDirty();
 	}
 
 	public String getDepartment() {
@@ -59,6 +64,7 @@ public class employee{
 
 	public void setDepartment(String department) {
 		this.department = department;
+		setDirty();
 	}
 
 }

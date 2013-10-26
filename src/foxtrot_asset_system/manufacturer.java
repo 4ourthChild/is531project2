@@ -15,6 +15,7 @@ public class manufacturer extends BusinessObject{
 
 	public void setId(String id) {
 		this.id = id;
+		setDirty();
 	}
 
 	public String getName() {
@@ -23,6 +24,7 @@ public class manufacturer extends BusinessObject{
 
 	public void setName(String name) {
 		this.name = name;
+		setDirty();
 	}
 	
 

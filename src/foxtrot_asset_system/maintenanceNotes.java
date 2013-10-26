@@ -43,6 +43,7 @@ public class maintenanceNotes extends BusinessObject{
 
 	public void setNote(String note) {
 		this.note = note;
+		setDirty();
 	}
 
 	public String getServiceDate() {
@@ -51,6 +52,7 @@ public class maintenanceNotes extends BusinessObject{
 
 	public void setServiceDate(String serviceDate) {
 		this.serviceDate = serviceDate;
+		setDirty();
 	}
 
 	public String getServiceEmployeeId() {
@@ -59,6 +61,7 @@ public class maintenanceNotes extends BusinessObject{
 
 	public void setServiceEmployeeId(String serviceEmployeeId) {
 		this.serviceEmployeeId = serviceEmployeeId;
+		setDirty();
 	}
 	
 }

@@ -22,6 +22,7 @@ public class assetObject extends BusinessObject{
 
 	public void setId(String id) {
 		this.id = id;
+		setDirty();
 	}
 
 	public String getName() {
@@ -30,6 +31,7 @@ public class assetObject extends BusinessObject{
 
 	public void setName(String name) {
 		this.name = name;
+		setDirty();
 	}
 
 	public String getManufacturer_part_id() {
@@ -38,6 +40,7 @@ public class assetObject extends BusinessObject{
 
 	public void setManufacturer_part_id(String manufacturer_part_id) {
 		this.manufacturer_part_id = manufacturer_part_id;
+		setDirty();
 	}
 
 	public String getEmployee_id() {
@@ -46,6 +49,7 @@ public class assetObject extends BusinessObject{
 
 	public void setEmployee_id(String employee_id) {
 		this.employee_id = employee_id;
+		setDirty();
 	}
 
 	public String getInstallDate() {
@@ -54,6 +58,7 @@ public class assetObject extends BusinessObject{
 
 	public void setInstallDate(String installDate) {
 		this.installDate = installDate;
+		setDirty();
 	}
 
 	public String getDate_depreciated_by() {
@@ -62,6 +67,7 @@ public class assetObject extends BusinessObject{
 
 	public void setDate_depreciated_by(String date_depreciated_by) {
 		this.date_depreciated_by = date_depreciated_by;
+		setDirty();
 	}
 
 	public String getTag() {
@@ -70,6 +76,7 @@ public class assetObject extends BusinessObject{
 
 	public void setTag(String tag) {
 		this.tag = tag;
+		setDirty();
 	}
 
 	public String getNote() {
@@ -77,7 +84,8 @@ public class assetObject extends BusinessObject{
 	}
 
 	public void setNotes(String notes) {
-		this.notes = notes;
+		this.note = notes;
+		setDirty();
 	}
 
 	public String getLocation_id() {
@@ -86,6 +94,7 @@ public class assetObject extends BusinessObject{
 
 	public void setLocation_id(String location_id) {
 		this.location_id = location_id;
+		setDirty();
 	}
 	
 }

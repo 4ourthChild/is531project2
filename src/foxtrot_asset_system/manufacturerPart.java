@@ -19,6 +19,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setId(String id) {
 		this.id = id;
+		setDirty();
 	}
 
 	public String getManufacturerId() {
@@ -27,6 +28,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setManufacturerId(String manufacturerId) {
 		this.manufacturerId = manufacturerId;
+		setDirty();
 	}
 
 	public String getName() {
@@ -35,6 +37,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setName(String name) {
 		this.name = name;
+		setDirty();
 	}
 
 	public String getDescription() {
@@ -43,6 +46,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setDescription(String description) {
 		this.description = description;
+		setDirty();
 	}
 
 	public String getType() {
@@ -51,6 +55,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setType(String type) {
 		this.type = type;
+		setDirty();
 	}
 
 	public String getWeight() {
@@ -59,6 +64,7 @@ public class manufacturerPart extends BusinessObject{
 
 	public void setWeight(String weight) {
 		this.weight = weight;
+		setDirty();
 	}
 
 	
