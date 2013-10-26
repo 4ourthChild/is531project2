@@ -41,33 +41,27 @@ if(request.getParameter(name) == null || request.getParameter(name).equals("")){
 	}
 }
 
-String firstname = request.getParameter("first_name");
-String lastname = request.getParameter("last_name");
-String emailAddress = request.getParameter("email_address");
+String name = request.getParameter("name");
 String manufacturerName = request.getParameter("manufacturer_name");
-String manufacturerPartName = request.getParameter("manufacturer_part_name");
+String manufacturerPartId = request.getParameter("manufacturer_part_id");
 String tag = request.getParameter("tag");
-String locationGroupName = request.getParameter("location_group_name");
 String locationName = request.getParameter("location_name");
+String depreciated = request.getParameter("depreciated");
+String installdate = request.getParameter("installdate");
+String note = request.getParameter("note");
 
 //assetObject cust = BusinessObjectDAO.getInstance().create("Customer");
 assetObject asset = new assetObject();
-private String id;
-private String name;
-private String manufacturer_part_id;
-private String employee_id;
-private String installDate;
-private String date_depreciated_by;
-private String tag;
-private String notes;
-private String location_id;
-asset.setId();
+
+asset.setId("fbrooke");
 asset.setName(name);
-asset.setManufacturer_part_id("");
-asset.setInstallDate(name);
-asset.setDate_depreciated_by(name);
+asset.setManufacturer_part_id(manufacturerPartId);
+asset.setInstallDate(installdate);
+asset.setDate_depreciated_by(depreciated);
 asset.setTag(tag);
-asset.setNote(note);
+asset.setNotes(note);
+
+
 
 
 cust.setLastname(lastname);

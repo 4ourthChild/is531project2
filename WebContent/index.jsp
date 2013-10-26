@@ -53,8 +53,8 @@
 			Manufacturer Part Id: <input type="text" name="manufacturer_part_id" /><br />
 			Tag #: <input type="text" name="tag" /><br />
 			Location Name: <input type="text" name="location_name" /><br />
-			Date Depreciated By: <input type="text" name="tag" /><br />
-			Install Date: <input type="text" name="tag" /><br />
+			Date Depreciated By: <input type="text" name="depreciated" /><br />
+			Install Date: <input type="text" name="installdate" /><br />
 			Note: <input type="text" name="note" /><br />
 			<input type="submit" value="Submit" />
 		</form>
