@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-		<h1>Using GET Method to Read Form Data</h1>
+		<!-- <h1>Using GET Method to Read Form Data</h1>
 		<ul>
 		<li><p><b>First Name:</b>
 		   <%= request.getParameter("name")%>
@@ -25,7 +25,24 @@
 		   <%= request.getParameter("location_name")%>
 		</p></li>
 		
-		</ul>
+		</ul>-->
+		
+		
+		
+		
+		
+		
+		<form action="foxtrot_asset_system.actions.NewAsset.action" method="GET">
+			Asset Name: <input type="text" name="name" value="<%= request.getParameter("name")%>"  /><br />
+			Manufacturer: <input type="text" name="manufacturer_name" value="<%= request.getParameter("manufacturer_name")%>" /><br />
+			Manufacturer Part Id: <input type="text" name="manufacturer_part_id" value="<%= request.getParameter("manufacturer_part_id")%>" /><br />
+			Tag #: <input type="text" name="tag" value="<%= request.getParameter("tag")%>"/><br />
+			Location Name: <input type="text" name="location_name" value="<%= request.getParameter("location_name")%>"/><br />
+			Date Depreciated By: <input type="text" name="depreciated" value="<%= request.getParameter("depreciated")%>"/><br />
+			Install Date: <input type="text" name="installdate" value="<%= request.getParameter("installdate")%>"/><br />
+			Note: <input type="text" name="note" value="<%= request.getParameter("note")%>"/><br />
+			<input type="submit" value="Submit" />
+		</form>
 
 
 
