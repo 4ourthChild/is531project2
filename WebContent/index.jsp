@@ -48,11 +48,13 @@
 </head>
 <body>
 			<form action="confirmation.jsp" method="GET">
+			Asset Name: <input type="text" name="name" /><br />
 			Manufacturer: <input type="text" name="manufacturer_name" /><br />
-			Part Name: <input type="text" name="manufacturer_part_name" /><br />
-			tag #: <input type="text" name="tag" /><br />
-			Location Group: <input type="text" name="location_group_name" /><br />
+			Manufacturer Part Id: <input type="text" name="manufacturer_part_id" /><br />
+			Tag #: <input type="text" name="tag" /><br />
 			Location Name: <input type="text" name="location_name" /><br />
+			Date Depreciated By: <input type="text" name="tag" /><br />
+			Install Date: <input type="text" name="tag" /><br />
 			Note: <input type="text" name="note" /><br />
 			<input type="submit" value="Submit" />
 		</form>
