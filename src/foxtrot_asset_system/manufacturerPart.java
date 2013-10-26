@@ -1,6 +1,6 @@
 package foxtrot_asset_system;
 
-public class manufacturerPart {
+public class manufacturerPart extends BusinessObject{
 	
 	private String id;
 	private String manufacturerId;
@@ -9,8 +9,8 @@ public class manufacturerPart {
 	private String type;
 	private String weight;
 	
-	public manufacturerPart(){
-		
+	public manufacturerPart(String id){
+		super(id);
 	}
 
 	public String getId() {

@@ -1,12 +1,12 @@
 package foxtrot_asset_system;
 
-public class manufacturer {
+public class manufacturer extends BusinessObject{
 	
 	private String id;
 	private String name;
 	
-	public manufacturer(){
-		
+	public manufacturer(String id){
+		super(id);
 	}
 
 	public String getId() {

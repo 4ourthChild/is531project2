@@ -1,6 +1,6 @@
 package foxtrot_asset_system;
 
-public class assetObject {
+public class assetObject extends BusinessObject{
 
 	private String id;
 	private String name;
@@ -12,8 +12,8 @@ public class assetObject {
 	private String note;
 	private String location_id;
 	
-	public assetObject(){
-		
+	public assetObject(String id){
+		super(id);
 	}
 
 	public String getId() {

@@ -1,15 +1,15 @@
 package foxtrot_asset_system;
 
-public class locationGroup {
+public class locationGroup extends BusinessObject{
 
 	private String id;
 	private String name;
 	private String address;
 	private String location_id;
 	
-	public locationGroup()
+	public locationGroup(String id)
 	{
-		
+		super(id);
 	}
 
 	public String getId() {

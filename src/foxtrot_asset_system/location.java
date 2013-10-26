@@ -1,6 +1,6 @@
 package foxtrot_asset_system;
 
-public class location {
+public class location extends BusinessObject{
 
 
 	private String id;
@@ -8,8 +8,8 @@ public class location {
 	private String description;
 	private String number;
 	
-	public location(){
-		
+	public location(String id){
+		super(id);
 	}
 
 	public String getId() {

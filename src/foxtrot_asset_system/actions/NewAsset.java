@@ -50,8 +50,7 @@ String depreciated = request.getParameter("depreciated");
 String installdate = request.getParameter("installdate");
 String note = request.getParameter("note");
 
-//assetObject cust = BusinessObjectDAO.getInstance().create("Customer");
-assetObject asset = new assetObject();
+assetObject asset = BusinessObjectDAO.getInstance().create("assetObject");
 
 asset.setId("fbrooke");
 asset.setName(name);
@@ -61,7 +60,7 @@ asset.setDate_depreciated_by(depreciated);
 asset.setTag(tag);
 asset.setNotes(note);
 
-
+asset.save();
 
 
 cust.setLastname(lastname);
