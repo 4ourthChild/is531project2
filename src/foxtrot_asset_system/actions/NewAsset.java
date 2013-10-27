@@ -34,12 +34,12 @@ HttpServletResponse response) throws Exception {
 HttpSession session = request.getSession();
 
 //Validate the Input
-for(String name: new String[] {"name", "manufacturer_name", "manufacturer_part_id", "tag", "location_name", "depreciation", "installdate", "note"}){
-if(request.getParameter(name) == null || request.getParameter(name).equals("")){
-	request.setAttribute("message", "Please enter a value for " + name);
-	return"index.jsp";
-	}
-}
+//for(String name: new String[] {"name", "manufacturer_name", "manufacturer_part_id", "tag", "location_name", "depreciation", "installdate", "note"}){
+//if(request.getParameter(name) == null || request.getParameter(name).equals("")){
+//	request.setAttribute("message", "Please enter a value for " + name);
+//	return "server_info.jsp";
+//	}
+//}
 
 String name = request.getParameter("name");
 String manufacturerName = request.getParameter("manufacturer_name");
@@ -50,17 +50,30 @@ String depreciated = request.getParameter("depreciated");
 String installdate = request.getParameter("installdate");
 String note = request.getParameter("note");
 
-assetObject asset = BusinessObjectDAO.getInstance().create("assetObject");
+//asset asset1 = BusinessObjectDAO.getInstance().create("asset");
+//
+//asset1.setId(GUID.generate());
+//asset1.setName(name);
+//asset1.setManufacturer_part_id(manufacturerPartId);
+//asset1.setInstallDate(installdate);
+//asset1.setDate_depreciated_by(depreciated);
+//asset1.setTag(tag);
+//asset1.setNotes(note);
+//asset1.setLocation_id("hi");
 
-asset.setId(GUID.generate());
-asset.setName(name);
-asset.setManufacturer_part_id(manufacturerPartId);
-asset.setInstallDate(installdate);
-asset.setDate_depreciated_by(depreciated);
-asset.setTag(tag);
-asset.setNotes(note);
+asset asset1 = BusinessObjectDAO.getInstance().create("asset");
 
-asset.save();
+//location.save();
+//
+//asset1.setId(GUID.generate());
+//asset1.setName(name);
+//asset1.setManufacturer_part_id(manufacturerPartId);
+//asset1.setInstallDate(installdate);
+//asset1.setDate_depreciated_by(depreciated);
+//asset1.setTag(tag);
+//asset1.setNotes(note);
+//asset1.setLocation_id("hi");
+
 
 
 //Send an email
@@ -68,7 +81,7 @@ StringBuilder body = new StringBuilder();
 body.append("Welcome to My Stuff! To finish your registration, please click the link below. You'll love our great products.\n\n");
 
 System.out.println("sent!");
-return "assetlist.jsp";
+return "server_info.jsp";
 }
 
 }

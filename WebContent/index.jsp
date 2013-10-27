@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
 </head>
 <body>
-			<form action="confirmation.jsp" method="GET">
+			<form action="foxtrot_asset_system.actions.NewAsset.action" method="GET">
 			Asset Name: <input type="text" name="name" /><br />
 			Manufacturer: <input type="text" name="manufacturer_name" /><br />
 			Manufacturer Part Id: <input type="text" name="manufacturer_part_id" /><br />
